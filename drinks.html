@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню напоїв | FreshDrinks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">FreshDrinks</div>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="drinks.html" class="active">Напої</a>
+            <a href="cart.html">Кошик</a>
+        </nav>
+    </header>
+
+    <main class="drinks-container">
+        <h2 class="section-title">Наші напої</h2>
+        <div class="drinks-grid">
+            <!-- Напій 1 -->
+            <div class="drink-card">
+                <img src="https://i.evrasia.in.ua/data/1400_0/products/1712q4TCUuuNzaStEmw231r8IWgtemhlGdgxK6KL.webp" alt="Лимонад м'ята-лайм">
+                <h3>Лимонад м'ята-лайм</h3>
+                <p>Освіжаючий поєднання лайму та свіжої м'яти</p>
+                <div class="price">₴45</div>
+                <button class="btn add-to-cart" data-id="1">Замовити</button>
+            </div>
+            
+            <!-- Напій 2 -->
+            <div class="drink-card">
+                <img src="https://i.evrasia.in.ua/data/1400_0/products/AQRrRb1isa6jrG4sFRUMQbmo6Ie67yoWV0G6P63l.webp" alt="Ягідний фреш">
+                <h3>Ягідний фреш</h3>
+                <p>Суміш полуниці, малини та чорниці</p>
+                <div class="price">₴55</div>
+                <button class="btn add-to-cart" data-id="2">Замовити</button>
+            </div>
+            
+            <!-- Напій 3 -->
+            <div class="drink-card">
+                <img src="https://i.evrasia.in.ua/data/1400_0/products/YxaNLkvyc2uIL6En.webp" alt="Тропічний мікс">
+                <h3>Тропічний мікс</h3>
+                <p>Ананас, манго та кокосове молоко</p>
+                <div class="price">₴60</div>
+                <button class="btn add-to-cart" data-id="3">Замовити</button>
+            </div>
+            
+            <!-- Напій 4 -->
+            <div class="drink-card">
+                <img src="https://i.evrasia.in.ua/data/1400_0/products/b04E6WSuiBVWs31unqfOpbEhy89CMZvpVWiQVZwV.webp" alt="Чай матча лате">
+                <h3>Чай матча лате</h3>
+                <p>Японський зелений чай з молоком</p>
+                <div class="price">₴65</div>
+                <button class="btn add-to-cart" data-id="4">Замовити</button>
+            </div>
+            
+            <!-- Напій 5 -->
+            <div class="drink-card">
+                <img src="data:image/jpeg;base64,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" alt="Кава фрапе">
+                <h3>Кава фрапе</h3>
+                <p>Холодна кава з морозивом та шоколадом</p>
+                <div class="price">₴50</div>
+                <button class="btn add-to-cart" data-id="5">Замовити</button>
+            </div>
+            
+            <!-- Напій 6 (новий) -->
+            <div class="drink-card">
+                <img src="https://st4.depositphotos.com/1001069/21561/i/450/depositphotos_215619920-stock-photo-tequila-sunrise-cocktail-isolated-white.jpg" alt="Гранатовий сплеск">
+                <h3>Гранатовий сплеск</h3>
+                <p>Гранат, апельсин та імбир</p>
+                <div class="price">₴58</div>
+                <button class="btn add-to-cart" data-id="6">Замовити</button>
+            </div>
+            
+            <!-- Напій 7 (новий) -->
+            <div class="drink-card">
+                <img src="https://i.evrasia.in.ua/data/1400_0/products/dYEkknfDxUXtNVS0.webp" alt="Шипшина з медом">
+                <h3>Шипшина з медом</h3>
+                <p>Вітамінний напій з дикорослих ягід</p>
+                <div class="price">₴48</div>
+                <button class="btn add-to-cart" data-id="7">Замовити</button>
+            </div>
+            
+            <!-- Напій 8 (новий) -->
+            <div class="drink-card">
+                <img src="https://st.depositphotos.com/1592454/5117/i/380/depositphotos_51176853-stock-photo-milkshake-chocolate-coffee.jpg" alt="Шоколадний мілкшейк">
+                <h3>Шоколадний мілкшейк</h3>
+                <p>Ніжний шоколад з вершками та морозивом</p>
+                <div class="price">₴62</div>
+                <button class="btn add-to-cart" data-id="8">Замовити</button>
+            </div>
+            
+            <!-- Напій 9 (новий) -->
+            <div class="drink-card">
+                <img src="https://st.depositphotos.com/1004221/1866/i/380/depositphotos_18666665-stock-photo-mojito.jpg" alt="Мохіто безалкогольне">
+                <h3>Мохіто безалкогольне</h3>
+                <p>Лайм, м'ята, цукор та содова</p>
+                <div class="price">₴52</div>
+                <button class="btn add-to-cart" data-id="9">Замовити</button>
+            </div>
+            
+            <!-- Напій 10 (новий) -->
+            <div class="drink-card">
+                <img src="https://st2.depositphotos.com/16122460/43428/i/380/depositphotos_434287016-stock-photo-delicious-christmas-cocktail-liqueur-glass.jpg" alt="Кокосовий рай">
+                <h3>Кокосовий рай</h3>
+                <p>Кокосове молоко, ананас та банан</p>
+                <div class="price">₴68</div>
+                <button class="btn add-to-cart" data-id="10">Замовити</button>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <!-- Бульбашки для анімації -->
+    <div class="footer-bubble"></div>
+    <div class="footer-bubble"></div>
+    <div class="footer-bubble"></div>
+    
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Про нас</h3>
+            <p>FreshDrinks - це свіжі та смачні напої з натуральних інгредієнтів для вашого здоров'я та задоволення.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Посилання</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="drinks.html">Меню</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Контакти</h3>
+            <ul class="footer-links">
+                <li>м. Київ, вул. Напоєва 123</li>
+                <li>+380 12 345 6789</li>
+                <li>info@freshdrinks.ua</li>
+            </ul>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <p>© 2023 FreshDrinks. Усі права захищені.</p>
+</footer>
+
+    <script src="cart.js"></script>
+            <script src="script.js"></script>
+</body>
+</html>
